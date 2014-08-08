@@ -1,0 +1,4 @@
+i2cxl:  
+  name: [S0, S1, S2, S3, S4, S5, S6, S7]
+  address: [0x60, 0x61, 0x62, 0x63, 0x64, 0x65, 0x66, 0x67]
+  trigger_delay: [9, 10, 7, 8, 5, 1, 3, 2]

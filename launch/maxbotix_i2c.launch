@@ -1,0 +1,9 @@
+<launch>
+	<!-- Load sensor configurations from YAML file to parameter server -->
+	<rosparam file="$(find maxbotix_i2c)/config/sensors.yaml" command="load"/>
+	
+	<node pkg="maxbotix_i2c" type="maxbotix_i2c" name="maxbotix_i2c" output="screen">
+		<param name="dev" value="/dev/i2c-4" />
+		<param name="rate" value="10.0" />
+	</node>
+</launch>
